@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Frogeye Vue Plugin Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+
+    <style>
+        #image {
+            width: 160px;
+            height: 160px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <img v-if="visible" id="image" src="https://si.geilicdn.com/vshop300006683-1476421869601-1415596.jpg?w=400&h=400&cp=1"
+         v-frogeye:tap="ontap" v-frogeye:doubletap="ondoubletap" v-frogeye:swipe="onswipe">
+    <button @click="toggle" style="display:block; border:1px solid black;">Toggle</button>
+</div>
+
+<div>
+    <br>
+    <button id="clear" style="border: 1px solid black;">Clear</button>
+    <p>Logs:</p>
+    <div id="log" style="height: 350px; overflow: auto; border: 1px solid black"></div>
+</div>
+
+<script src="../../node_modules/vue/dist/vue.js"></script>
+<script src="../../src/frogeye.js"></script>
+<script src="../../src/plugins/frogeye.vue.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
+

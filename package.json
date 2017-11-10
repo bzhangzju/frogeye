@@ -1,0 +1,22 @@
+{
+  "name": "frogeye",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/frogeye.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bzhangzju/frogeye.git"
+  },
+  "author": "bzhangzju",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "~3.0.0",
+    "gulp": "~3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "~1.4.2",
+    "jquery": "~3.2.1",
+    "run-sequence": "^2.2.0",
+    "vue": "~2.5.2"
+  }
+}
